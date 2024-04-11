@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0; /* Default background color */
+}
+
+.timer {
+    margin-top: 50px;
+}
+
+/* Add this to change the size and color of the timer text */
+.timer-size {
+    font-size: 50px;
+}
+
+.settings-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+}
+
+
+.timer-color {
+    color: #000000;
+}
+
+
+.mode {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.settings {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    adding: 0;
+border: none;
+background: none;
+}
+
+.settings-panel {
+    display: none;
+  
+} 
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Add this to hide the task form by default */
+.hidden {
+    display: none;
+}
+.task-manager {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.task-form {
+    margin-top: 20px;
+}
+
+.task-list li {
+    cursor: pointer;
+}
+
+.remove-task {
+    display: none;
+    color: red;
+}
+
+.task-list li:hover .remove-task {
+    display: inline;
+    
+    
+}
+
+.controls {
+    position: relative;
+}
+
+#tasks {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    text-align: left;
+    counter-increment: task-counter;
+}
+
+.controls {
+    position: relative;
+}
+
+#taskForm {
+    position: absolute;
+    top: calc(200% + 10px); /* Position below the controls */
+    left: 0;
+}
+
+.session-info {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
