@@ -7,15 +7,25 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+  
+  
+
+
+
+
    <div id="sessionInfo" class="session-info"></div>
 
     <div id="taskManager" class="task-manager">
-        <button id="showTaskFormBtn" class="btn">Manage Tasks</button>
+        <button id="showTaskFormBtn" class="btn" onclick="toggleTaskForm()">Manage Tasks</button>
+
     </div>
     <div id="taskForm" class="task-form hidden">
         <input type="text" id="taskInput" placeholder="Enter Task">
         <button id="addTaskBtn" class="btn">+</button>
-    </div>
+        <button id="Showtaskinput" onclick="manageTasks()" >Add Task</button>
+    <button id="hideTaskInputBtn" onclick="toggleTaskInput()">Hide</button>
+</div>
+ 
     <div id="timer" class="timer">25:00</div>
     <div id="mode" class="mode">Focus Mode</div>
     <div id="controls" class="controls">
@@ -44,6 +54,13 @@
         <input type="number" id="breakInterval" value="5" min="1">
         <label for="bgColor">Background Color:</label>
         <input type="color" id="bgColor" value="#f0f0f0">
+        
+         <button onclick="changeColors('#0000FF', '#FFD1DC')">Blue & Pastel Pink</button>
+   <button onclick="changeColors('#CDC673', '#FA8072')">Pastel Olive Green & Salmon Pink</button>
+     <button onclick="changeColors('#00008B', '#ADD8E6')">Dark Blue & Light Blue</button>
+    <button onclick="changeColors('#87CEEB', '#FF69B4')">Sky Blue & Bubblegum Pink</button>
+    <button onclick="changeColors('#228B22', '#ADFF2F')">Forest Green & Moss Green</button>
+
     </div>
 
     <script src="script.js"></script>
