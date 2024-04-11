@@ -6,12 +6,55 @@ let breakInterval = 5 * 60;   // Default break interval in seconds
 let isFocusMode = true; // Initial mode is focus mode
 let isPaused = false;
 
+
+function changeColors(fontColor, bgColor) {
+    // Change font color of timer
+    document.getElementById('timer').style.color = fontColor;
+
+    // Change background color of body
+    document.body.style.backgroundColor = bgColor;
+}
+
+
+
+
 function updateTimerDisplay() {
     let minutes = Math.floor(remainingTime / 60);
     let seconds = remainingTime % 60;
     document.getElementById('timer').innerText = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 }
+function toggleTaskInput() {
+    var taskInput = document.getElementById('taskInput');
+    var hideTaskInputBtn = document.getElementById('hideTaskInputBtn');
+    var addTaskBtn = document.getElementById('addTaskBtn');
+    
+    if (taskInput.style.display === 'none') {
+        taskInput.style.display = 'block';
+        hideTaskInputBtn.textContent = 'Hide';
+        addTaskBtn.style.display = 'inline'; // Show the "+" button
+    } else {
+        taskInput.style.display = 'none';
+        hideTaskInputBtn.textContent = 'Show';
+        hideTaskInputBtn.style.display = 'none'; // Hide the "Hide" button
+        addTaskBtn.style.display = 'none'; // Hide the "+" button
+    }
+}
 
+function manageTasks() {
+    var taskInput = document.getElementById('taskInput');
+    var hideTaskInputBtn = document.getElementById('hideTaskInputBtn');
+    var addTaskBtn = document.getElementById('addTaskBtn');
+    
+    if (taskInput.style.display === 'none') {
+        taskInput.style.display = 'block';
+        hideTaskInputBtn.textContent = 'Hide';
+        addTaskBtn.style.display = 'inline'; // Show the "+" button
+    } else {
+        taskInput.style.display = 'none';
+        hideTaskInputBtn.textContent = 'Show';
+        addTaskBtn.style.display = 'none'; // Hide the "+" button
+    }
+}
 
 document.getElementById('timerSize').addEventListener('input', function() {
     let timerSize = parseInt(this.value);
