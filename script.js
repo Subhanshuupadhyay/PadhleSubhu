@@ -201,6 +201,10 @@ function startFocusTimer() {
     updateSessionCounter();
 }
 
+document.getElementById("creditsButton").addEventListener("click", function() {
+    // Replace "https://example.com" with the URL of the website you want to redirect users to
+    window.open("https://google.com");
+
 function startBreakTimer() {
     // Your existing code to start break timer
     
