@@ -52,6 +52,21 @@ background: none;
   
 } 
 
+
+.streamers-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
 .btn {
     padding: 10px 20px;
     font-size: 16px;
