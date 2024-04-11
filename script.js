@@ -218,6 +218,6 @@ function updateSessionCounter() {
 // JavaScript to handle the button click event
 document.getElementById("creditsButton").addEventListener("click", function() {
     // Replace "https://example.com" with the URL of the website you want to redirect users to
-    window.open("https://google.com");
+    window.open("https://subhanshuupadhyay.github.io/PadhleSubhu/credits.html");
 });
 
